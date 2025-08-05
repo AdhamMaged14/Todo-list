@@ -1,15 +1,37 @@
-<!-- dist/index.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Todo List</title>
-</head>
 <body>
-  <h1>Todo List</h1>
+ <div id="app">
+  <!-- LEFT SIDE -->
+  <div id="left">
+    <h2>Projects</h2>
+    <div id="project-list"></div>
 
+    <h2 id="project-title">Todos</h2>
+    <div id="todo-list"></div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div id="right">
+    <h2>Add Project</h2>
+    <form id="project-form">
+      <input type="text" id="project-name" placeholder="New Project Name" required />
+      <button type="submit">Add Project</button>
+    </form>
+
+    <h2>Add Todo</h2>
+    <form id="todo-form">
+      <input type="text" id="todo-title" placeholder="Title" required />
+      <textarea id="todo-desc" placeholder="Description"></textarea>
+      <input type="date" id="todo-date" />
+      <select id="todo-priority">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Add Todo</button>
+    </form>
+  </div>
+</div>
 
 
   <script src="main.js"></script>
 </body>
-</html>

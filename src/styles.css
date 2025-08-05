@@ -1,0 +1,120 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+#app {
+  display: flex;
+  width: 100%;
+}
+
+/* LEFT SIDE */
+#left {
+  flex: 2;
+  padding: 2rem;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+}
+
+#left h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #90caf9;
+}
+
+#project-list,
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Project Button */
+#project-list button {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#project-list button:hover {
+  background-color: #444;
+}
+
+/* Todo Item */
+.todo {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.todo h3 {
+  margin: 0 0 0.5rem;
+}
+
+.todo p {
+  margin: 0.2rem 0;
+  color: #ccc;
+}
+
+/* RIGHT SIDE */
+#right {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #181818;
+}
+
+#right h2 {
+  color: #81c784;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Forms */
+form {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, select, textarea {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #90caf9;
+}
+
+button[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+  background-color: #1565c0;
+}
